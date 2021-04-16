@@ -1,4 +1,4 @@
-package babichev.skyscannermonitoring.to;
+package babichev.skyscannermonitoring.to.currency;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

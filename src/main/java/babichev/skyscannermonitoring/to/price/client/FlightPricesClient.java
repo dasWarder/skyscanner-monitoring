@@ -1,6 +1,6 @@
-package babichev.skyscannermonitoring.to.client;
+package babichev.skyscannermonitoring.to.price.client;
 
-import babichev.skyscannermonitoring.to.FlightPriceTo;
+import babichev.skyscannermonitoring.to.price.FlightPriceTo;
 
 public interface FlightPricesClient {
 

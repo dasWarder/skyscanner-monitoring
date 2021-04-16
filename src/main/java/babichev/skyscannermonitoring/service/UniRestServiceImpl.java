@@ -21,10 +21,18 @@ public class UniRestServiceImpl implements UniRestService {
     public static final String PLACES_FORMAT = "/apiservices/autosuggest/v1.0/%s/%s/%s/?query=%s";
     public static final String CURRENCIES_FORMAT = "/apiservices/reference/v1.0/currencies";
     public static final String COUNTRIES_FORMAT = "/apiservices/reference/v1.0/countries/%s";
+    public static final String BROWSE_PLACES_FORMAT = "/apiservices/browsequotes/v1.0/%s/%s/%s/%s/%s/%s";
+    public static final String BROWSE_PLACES_WITH_OPTIONAL_PARAM_FORMAT = BROWSE_PLACES_FORMAT + "?inboundpartialdate=%s";
+
 
     public static final String PLACES_KEY = "Places";
     public static final String CURRENCIES_KEY = "Currencies";
     public static final String COUNTRIES_KEY = "Countries";
+    public static final String QUOTES_KEY = "Quotes";
+    public static final String CARRIER_KEY = "Carrier";
+    public static final String ROUTES_KEY = "Routes";
+    public static final String DATES_KEY = "Dates";
+    public static final String VALIDATIONS_KEY = "ValidationErrors";
 
     @Value("${skyscanner.x.rapidapi.key}")
     private String xRapidApiKey;

@@ -1,4 +1,4 @@
-package babichev.skyscannermonitoring.to;
+package babichev.skyscannermonitoring.to.price;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;

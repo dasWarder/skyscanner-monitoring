@@ -1,9 +1,9 @@
-package babichev.skyscannermonitoring.to;
+package babichev.skyscannermonitoring.to.price;
 
+import babichev.skyscannermonitoring.to.price.OutboundLegTo;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
-import java.time.LocalDateTime;
 
 @Data
 public class QuoteTo {

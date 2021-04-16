@@ -1,6 +1,6 @@
-package babichev.skyscannermonitoring.to.client;
+package babichev.skyscannermonitoring.to.place.client;
 
-import babichev.skyscannermonitoring.to.PlaceTo;
+import babichev.skyscannermonitoring.to.place.PlaceTo;
 
 import java.util.*;
 

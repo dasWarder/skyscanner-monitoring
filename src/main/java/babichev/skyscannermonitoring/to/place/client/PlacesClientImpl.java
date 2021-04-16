@@ -1,7 +1,7 @@
-package babichev.skyscannermonitoring.to.client;
+package babichev.skyscannermonitoring.to.place.client;
 
 import babichev.skyscannermonitoring.service.UniRestService;
-import babichev.skyscannermonitoring.to.PlaceTo;
+import babichev.skyscannermonitoring.to.place.PlaceTo;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -29,7 +29,7 @@ public class PlacesClientImpl implements PlacesClient {
 
     @Override
     public List<PlaceTo> getPlaces(String country, String currency, String locale, String query) {
-        HttpResponse<JsonNode> response = restService.get(String.format(COUNTRIES_FORMAT, country, currency, locale, query));
+        HttpResponse<JsonNode> response = restService.get(String.format(PLACES_FORMAT, country, currency, locale, query));
 
         if(response.getStatus() != HttpStatus.SC_OK) {
             return null;
@@ -37,7 +37,7 @@ public class PlacesClientImpl implements PlacesClient {
 
         String jsonList = response.getBody()
                 .getObject()
-                .get(COUNTRIES_KEY)
+                .get(PLACES_KEY)
                 .toString();
 
         List<PlaceTo> placeTos = new ArrayList<>();

@@ -1,8 +1,12 @@
-package babichev.skyscannermonitoring.to;
+package babichev.skyscannermonitoring.to.price;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
 
+
+@Data
 public class BrowsePlaceTo {
+
     @JsonProperty("Name")
     private String name;
 

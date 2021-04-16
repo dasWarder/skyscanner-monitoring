@@ -1,8 +1,8 @@
-package babichev.skyscannermonitoring.to.client;
+package babichev.skyscannermonitoring.to.currency.client;
 
 import babichev.skyscannermonitoring.service.UniRestService;
-import babichev.skyscannermonitoring.to.CountryTo;
-import babichev.skyscannermonitoring.to.CurrencyTo;
+import babichev.skyscannermonitoring.to.currency.CountryTo;
+import babichev.skyscannermonitoring.to.currency.CurrencyTo;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.mashape.unirest.http.HttpResponse;
@@ -12,7 +12,6 @@ import org.apache.http.HttpStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 

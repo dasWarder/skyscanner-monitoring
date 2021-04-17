@@ -74,7 +74,7 @@ public class FlightPricesClientImpl implements FlightPricesClient {
     }
 
     private <T> List<T> readValue(String resultAsString, TypeReference<List<T>> valueTypeRef) {
-        List<T> listTos = new ArrayList<>();
+        List<T> listTos;
 
         try {
             listTos = objectMapper.readValue(resultAsString, valueTypeRef);

@@ -9,12 +9,14 @@ import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 import org.apache.http.HttpStatus;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static babichev.skyscannermonitoring.service.UniRestServiceImpl.*;
 
+@Component
 public class PlacesClientImpl implements PlacesClient {
 
     private UniRestService restService;
